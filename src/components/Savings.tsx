@@ -1,10 +1,10 @@
 import { Card } from "@/components/ui/card";
 import ROICalculator from "./ROICalculator";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import dollarIcon from "@/assets/dollar-icon.png";
-import rulerIcon from "@/assets/ruler-icon.png";
-import userIcon from "@/assets/user-icon.png";
-import decreaseIcon from "@/assets/decrease-icon.png";
+import dollarIcon from "@/assets/optimized/dollar-icon.webp";
+import rulerIcon from "@/assets/optimized/ruler-icon.webp";
+import userIcon from "@/assets/optimized/user-icon.webp";
+import decreaseIcon from "@/assets/optimized/decrease-icon.webp";
 const savingsData = [
   {
     icon: userIcon,

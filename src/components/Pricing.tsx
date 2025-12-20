@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Check, ArrowRight } from "lucide-react";
-import storeIcon from "@/assets/store-icon.png";
+import storeIcon from "@/assets/optimized/store-icon.webp";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import GetStartedModal from "@/components/GetStartedModal";
 const Pricing = () => {

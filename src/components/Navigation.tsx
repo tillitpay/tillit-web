@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/optimized/logo.webp";
 import GetStartedModal from "@/components/GetStartedModal";
 
 const Navigation = () => {

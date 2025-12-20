@@ -1,4 +1,4 @@
-import logo from "@/assets/logo.png";
+import logo from "@/assets/optimized/logo.webp";
 const Footer = () => {
   return <footer id="contact" className="bg-secondary/30 border-t border-border py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">

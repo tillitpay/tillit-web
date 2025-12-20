@@ -1,12 +1,12 @@
 import { Card } from "@/components/ui/card";
 import TypingAnimation from "./TypingAnimation";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
-import phoneIcon from "@/assets/phone-icon.png";
-import packageIcon from "@/assets/package-icon.png";
-import cardIcon from "@/assets/card-icon.png";
-import megaphoneIcon from "@/assets/megaphone-icon.png";
-import growthIcon from "@/assets/growth-icon.png";
-import userIcon from "@/assets/user-icon.png";
+import phoneIcon from "@/assets/optimized/phone-icon.webp";
+import packageIcon from "@/assets/optimized/package-icon.webp";
+import cardIcon from "@/assets/optimized/card-icon.webp";
+import megaphoneIcon from "@/assets/optimized/megaphone-icon.webp";
+import growthIcon from "@/assets/optimized/growth-icon.webp";
+import userIcon from "@/assets/optimized/user-icon.webp";
 const features = [{
   icon: phoneIcon,
   title: "Mobile POS",
