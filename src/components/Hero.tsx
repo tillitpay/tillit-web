@@ -95,11 +95,11 @@ const Hero = () => {
               The Future of Retail
             </div>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight pt-8">Say hello to <span className="text-primary">tillit.</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight pt-8">Say hello to <span className="text-primary">Tillit.</span>
             </h1>
             
             <div className="space-y-8 pt-12">
-              <p className="text-xl md:text-2xl text-foreground/90 max-w-2xl py-0">Eliminate checkout lines and expensive hardware, reduce labor costs, and maximize retail space with tillit's all-in-one mobile POS solution.</p>
+              <p className="text-xl md:text-2xl text-foreground/90 max-w-2xl py-0">Eliminate checkout lines and expensive hardware, reduce labor costs, and maximize retail space with Tillit's all-in-one mobile POS solution.</p>
               
               <div className="flex justify-center lg:justify-start">
                 <Button size="lg" onClick={() => setModalOpen(true)} className="text-lg px-8 py-6 bg-primary hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl">

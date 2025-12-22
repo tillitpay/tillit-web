@@ -49,7 +49,7 @@ const Features = () => {
             <TypingAnimation words={["Cashier", "Sales Associate", "Merchandiser", "Accountant", "Marketer"]} typingSpeed={120} deletingSpeed={80} delayBetweenWords={2000} />
           </h2>
           <p className="text-xl text-muted-foreground">
-            tillit combines all of the essential retail tools you need into one seamless, intuitive platform
+            Tillit combines all of the essential retail tools you need into one seamless, intuitive platform
           </p>
         </div>
         

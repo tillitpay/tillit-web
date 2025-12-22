@@ -166,9 +166,9 @@ async function createWebManifest() {
   console.log('Creating web manifest...\n');
   
   const manifest = {
-    name: "tillit | Mobile POS",
-    short_name: "tillit",
-    description: "tillit lets shoppers scan items and pay instantly on their phones",
+    name: "Tillit | Mobile POS",
+    short_name: "Tillit",
+    description: "Tillit lets shoppers scan items and pay instantly on their phones",
     start_url: "/",
     display: "standalone",
     background_color: "#ffffff",

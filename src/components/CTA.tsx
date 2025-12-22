@@ -17,7 +17,7 @@ const CTA = () => {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Ready to Transform Your Retail Experience?
           </h2>
-          <p className="text-xl md:text-2xl mb-12 text-primary-foreground/90">Turn every checkout into a frictionless customer win with tillit.</p>
+          <p className="text-xl md:text-2xl mb-12 text-primary-foreground/90">Turn every checkout into a frictionless customer win with Tillit.</p>
           
           <div className="flex justify-center">
             <Button size="lg" onClick={() => setModalOpen(true)} className="text-lg px-8 py-6 bg-background text-primary hover:bg-background/90 shadow-xl">

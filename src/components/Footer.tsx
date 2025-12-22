@@ -5,8 +5,8 @@ const Footer = () => {
         <div className="flex flex-wrap justify-center items-start gap-8 md:gap-16 mb-6">
           <div>
             <div className="flex items-center gap-0 mb-4">
-              <img src={logo} alt="tillit" className="w-24 h-24" />
-              <span className="font-display font-bold text-3xl">tillit</span>
+              <img src={logo} alt="Tillit" className="w-24 h-24" />
+              <span className="font-display font-bold text-3xl">Tillit</span>
             </div>
             
           </div>
@@ -31,7 +31,7 @@ const Footer = () => {
         </div>
         
         <div className="pt-6 border-t border-border text-center text-muted-foreground text-sm">
-          <p>&copy; 2025 tillit. All rights reserved.</p>
+          <p>&copy; 2025 Tillit. All rights reserved.</p>
         </div>
       </div>
     </footer>;

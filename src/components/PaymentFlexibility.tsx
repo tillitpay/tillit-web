@@ -141,7 +141,7 @@ const PaymentFlexibility = () => {
               <Card className="p-6 border-2 shadow-lg hover:shadow-xl transition-shadow duration-300">
                 <h3 className="text-2xl font-bold mb-4">Process Payments From Anywhere</h3>
                 <p className="text-muted-foreground leading-relaxed mb-6">
-                  Customers can't pay with their own device? Sales associates can scan items with the tillit store app, enabling customers to pay in seconds using tap-to-pay with contactless cards or mobile wallets so you can keep your lines moving.
+                  Customers can't pay with their own device? Sales associates can scan items with the Tillit store app, enabling customers to pay in seconds using tap-to-pay with contactless cards or mobile wallets so you can keep your lines moving.
                 </p>
                 
               </Card>

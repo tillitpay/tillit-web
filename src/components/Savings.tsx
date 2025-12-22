@@ -50,7 +50,7 @@ const Savings = () => {
             Save Money From <span className="text-primary">Day One</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            tillit pays for itself by eliminating costly checkout infrastructure and reducing labor expenses
+            Tillit pays for itself by eliminating costly checkout infrastructure and reducing labor expenses
           </p>
         </div>
 

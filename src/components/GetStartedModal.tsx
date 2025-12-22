@@ -52,6 +52,15 @@ const GetStartedModal = ({ open, onOpenChange }: GetStartedModalProps) => {
       const data = await response.json();
 
       if (data.success) {
+        // Fire Google Ads conversion event
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'conversion', {
+            'send_to': 'AW-17717146141/L2-NCID7m9UbEJ3kmIBC',
+            'value': 1.0,
+            'currency': 'USD'
+          });
+        }
+        
         toast({
           title: "Success!",
           description: "Your information has been submitted successfully.",
@@ -85,7 +94,7 @@ const GetStartedModal = ({ open, onOpenChange }: GetStartedModalProps) => {
         <DialogHeader>
           <DialogTitle className="text-2xl">Let's get started.</DialogTitle>
           <DialogDescription>
-            After filling out your information, a tillit representative will be in touch with you to discuss how we can help your business grow.
+            After filling out your information, a Tillit representative will be in touch with you to discuss how we can help your business grow.
           </DialogDescription>
         </DialogHeader>
         

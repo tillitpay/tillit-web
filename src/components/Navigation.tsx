@@ -14,8 +14,8 @@ const Navigation = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex items-center gap-1">
-            <img src={logo} alt="tillit" className="w-16 h-16" />
-            <span className="text-2xl font-display font-bold tracking-tight text-primary-foreground">tillit</span>
+            <img src={logo} alt="Tillit" className="w-16 h-16" />
+            <span className="text-2xl font-display font-bold tracking-tight text-primary-foreground">Tillit</span>
           </div>
           
           <div className="hidden md:flex items-center gap-14">
