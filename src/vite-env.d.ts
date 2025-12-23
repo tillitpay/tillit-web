@@ -6,5 +6,6 @@ interface Window {
     targetId: string,
     config?: Record<string, any>
   ) => void;
+  gtag_report_conversion?: (url?: string) => boolean;
   dataLayer?: any[];
 }

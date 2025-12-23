@@ -53,12 +53,8 @@ const GetStartedModal = ({ open, onOpenChange }: GetStartedModalProps) => {
 
       if (data.success) {
         // Fire Google Ads conversion event
-        if (typeof window !== 'undefined' && window.gtag) {
-          window.gtag('event', 'conversion', {
-            'send_to': 'AW-17717146141/L2-NCID7m9UbEJ3kmIBC',
-            'value': 1.0,
-            'currency': 'USD'
-          });
+        if (typeof window !== 'undefined' && window.gtag_report_conversion) {
+          window.gtag_report_conversion();
         }
         
         toast({
