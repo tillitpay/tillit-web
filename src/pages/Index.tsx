@@ -6,12 +6,14 @@ import Savings from "@/components/Savings";
 import Pricing from "@/components/Pricing";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
+import AnnouncementBanner from "@/components/AnnouncementBanner";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <main className="pt-16 md:pt-20">
+      <AnnouncementBanner />
+      <main className="pt-36 md:pt-40">
         <Hero />
         <Features />
         <PaymentFlexibility />

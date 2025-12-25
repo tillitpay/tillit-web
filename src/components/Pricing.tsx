@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { Check, ArrowRight } from "lucide-react";
+import { Check, ArrowRight, Gift } from "lucide-react";
 import storeIcon from "@/assets/optimized/store-icon.webp";
 import { useScrollAnimation } from "@/hooks/useScrollAnimation";
 import GetStartedModal from "@/components/GetStartedModal";
@@ -30,7 +30,13 @@ const Pricing = () => {
               <div className="mb-8">
                 <h3 className="text-2xl font-bold mb-4">Platform Fee</h3>
                 <div className="mb-2">
-                  <div className="text-5xl font-bold text-primary mb-1">$99</div>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="text-5xl font-bold text-primary">$99</div>
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-primary/10 rounded-full text-xs font-medium text-primary">
+                      <Gift className="w-3.5 h-3.5" strokeWidth={2.5} />
+                      Free for 30 days
+                    </div>
+                  </div>
                   <div className="text-lg text-muted-foreground">per month / per store</div>
                 </div>
               </div>

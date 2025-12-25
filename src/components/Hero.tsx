@@ -140,7 +140,7 @@ const Hero = () => {
                       const scale = centerDistance === 0 ? 1 : Math.max(0.4, 0.7 - centerDistance * 0.15);
                       const opacity = centerDistance === 0 ? 1 : Math.max(0, 0.3 - centerDistance * 0.15);
                       const rotation = position * 15;
-                      return <div key={product.id} className="absolute transition-all duration-700 ease-in-out" style={{
+                      return <div key={product.id} className="absolute carousel-item-smooth" style={{
                         transform: `translateX(${offset}px) scale(${scale}) rotateY(${rotation}deg)`,
                         opacity: opacity,
                         zIndex: centerDistance === 0 ? 15 : Math.max(1, 10 - centerDistance)
