@@ -1,4 +1,6 @@
 import logo from "@/assets/optimized/logo.webp";
+import { Facebook, Instagram } from "lucide-react";
+
 const Footer = () => {
   return <footer id="contact" className="bg-secondary/30 border-t border-border py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,8 +16,15 @@ const Footer = () => {
           <div className="text-center">
             <h4 className="font-semibold mb-4">Product</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#features" className="hover:text-foreground transition-colors">Features</a></li>
-              <li><a href="#pricing" className="hover:text-foreground transition-colors">Pricing</a></li>
+              <li><a href="/#features" className="hover:text-foreground transition-colors">Features</a></li>
+              <li><a href="/#pricing" className="hover:text-foreground transition-colors">Pricing</a></li>
+            </ul>
+          </div>
+          
+          <div className="text-center">
+            <h4 className="font-semibold mb-4">Legal</h4>
+            <ul className="space-y-2 text-muted-foreground">
+              <li><a href="/privacy" className="hover:text-foreground transition-colors">Privacy Policy</a></li>
             </ul>
           </div>
           
@@ -27,6 +36,30 @@ const Footer = () => {
             <a href="mailto:sales@tillitpay.com" className="text-primary hover:text-primary/80 transition-colors font-medium">
               sales@tillitpay.com
             </a>
+          </div>
+          
+          <div className="text-center">
+            <h4 className="font-semibold mb-4">Follow Us</h4>
+            <div className="flex gap-4 justify-center">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61585614960823" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Follow us on Facebook"
+              >
+                <Facebook className="w-6 h-6" />
+              </a>
+              <a 
+                href="https://www.instagram.com/tillitpay/?hl=en" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram className="w-6 h-6" />
+              </a>
+            </div>
           </div>
         </div>
         
