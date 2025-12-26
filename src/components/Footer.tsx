@@ -1,12 +1,39 @@
 import logo from "@/assets/optimized/logo.webp";
 import { Facebook, Instagram } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleLogoClick = () => {
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      navigate('/');
+    }
+  };
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    
+    if (location.pathname !== '/') {
+      // Navigate to home page with the section hash
+      navigate(`/#${sectionId}`);
+    } else {
+      // Smooth scroll to section on the same page
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return <footer id="contact" className="bg-secondary/30 border-t border-border py-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap justify-center items-start gap-8 md:gap-16 mb-6">
           <div>
-            <div className="flex items-center gap-0 mb-4">
+            <div className="flex items-center gap-0 mb-4 cursor-pointer" onClick={handleLogoClick}>
               <img src={logo} alt="Tillit" className="w-24 h-24" />
               <span className="font-display font-bold text-3xl">Tillit</span>
             </div>
@@ -16,8 +43,24 @@ const Footer = () => {
           <div className="text-center">
             <h4 className="font-semibold mb-4">Product</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="/#features" className="hover:text-foreground transition-colors">Features</a></li>
-              <li><a href="/#pricing" className="hover:text-foreground transition-colors">Pricing</a></li>
+              <li>
+                <a 
+                  href="/#features" 
+                  onClick={(e) => handleNavClick(e, 'features')}
+                  className="hover:text-foreground transition-colors"
+                >
+                  Features
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="/#pricing" 
+                  onClick={(e) => handleNavClick(e, 'pricing')}
+                  className="hover:text-foreground transition-colors"
+                >
+                  Pricing
+                </a>
+              </li>
             </ul>
           </div>
           
